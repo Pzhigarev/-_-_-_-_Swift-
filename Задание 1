@@ -3,6 +3,4 @@ var number: Int = 7
     if number > 7 {
         print("Привет")
     }
-    else {
-        print("Попробуйте еще раз")   
-    }
+
