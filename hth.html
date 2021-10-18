@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .a-button {
+                position: absolute;
+                top: 350px;
+                right: 650px;
+                min-width: 100px; /* размер в пикселях */
+                font-family: inherit;
+                appearance: none; /* отключение стандартной стилистики кнопки */
+                border: 10; /* обводка кнопки */
+                border-radius: 5px; /* Скругление кнопки */
+                background:#d31212; /* фон (цвет) кнопки */
+                color:#000; /* Цвет текста кнопки */
+                padding: 8px 16px; /* Высота и ширина кнопки в пикселях */
+                font-size: 1.5rem; /* Размер текста на кнопке */
+                cursor: pointer; /* Изменение курсора при наведении на кнопку */
+                }
+                .a-button:hover {
+                background-color: #ff0000; /* Цвет кнопки при наведении на нее */
+                }
+
+                body {
+                    background: black url(qwer.png); /* Фоновый цвет и фоновый рисунок*/
+                    color: rgba(255, 0, 0, 0.781); /*Цвет текста на странице*/
+                    background-attachment:inherit; /* Фон страницы фиксируется */
+                    background-repeat:initial; /* Изображение повторяется по горизонтали */
+                    background-size: 10%; /* Изображение растягивается на весь фон */
+                    font-family: inherit;
+                    font: 30px courier; /* Размер (в пикселях) и стиль текста */
+                    color: #d31212;/* Цвет текста */
+                    text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;/* Тень текста */
+                    
+                }
+        </style>
+    </head>
+    <body>
+        <center><button class="a-button" id="a-button">
+            Нажми на меня
+            </button></center>
+            <script>
+                let cum = true;
+                document.querySelector("#a-button").onclick = function(){
+                    do{
+                    cum = confirm ("Аня, Тебе скучно на работе?");
+                    if (cum == false){
+                        alert ('ТАК И НЕ ВЫЕБЫВАЙСЯ!!!')
+                    }} while (cum != false);
+                }
+                    
+            </script>
+
+    </body>
